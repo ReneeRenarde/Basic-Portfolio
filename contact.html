@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,47 @@
     <title>Anne Jordan Portfolio</title>
 
     <link rel="stylesheet" href="styles.css">
-    
+
 </head>
+
 <body>
-    <header>
-        <h1>Contact Me</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="wrapper">
+        <header>
+            <h1 class="nametag">Contact Me</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="wrapper">
+        <div class="container">
+            <form action="action_page.php">
 
-    <section>Content</section>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-    <footer>Footer</footer>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="email"> email address</label>
+                <input type="text" id="email" name="email" placeholder="Your email address..">
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+    </div>
+
+    <footer id="footer">Footer</footer>
 
 </body>
+
 
 </html>
